@@ -59,6 +59,13 @@ void Add_Any_position_listaNode(int n, Lista *lista, Libro *libro){
         lista->cabeza=nodo;
     }else{
 
+        if(n==0){
+
+            puntero->siguiente=lista->cabeza;
+            lista->cabeza=nodo;
+
+        }
+
         while(posicion <n && puntero->siguiente){
 
 
